@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace ASP.NET.Identity.Users.Controllers
 {
+    [Authorize(Roles = "Administrators")]
     public class AdminController : Controller
     {
         public ActionResult Index()
