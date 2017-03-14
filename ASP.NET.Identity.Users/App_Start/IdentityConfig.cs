@@ -24,6 +24,10 @@ namespace ASP.NET.Identity.Users
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login"),
             });
+
+            //google 认证
+            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+            app.UseGoogleAuthentication();
         }
     }
 }

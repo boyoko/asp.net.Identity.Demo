@@ -34,11 +34,11 @@ namespace ASP.NET.Identity.Users.Infrastructure
             };
 
             //设置用户名验证规则
-            manager.UserValidator = new UserValidator<AppUser>(manager)
-            {
-                AllowOnlyAlphanumericUserNames = true,
-                RequireUniqueEmail = true
-            };
+            //manager.UserValidator = new UserValidator<AppUser>(manager)
+            //{
+            //    AllowOnlyAlphanumericUserNames = true,
+            //    RequireUniqueEmail = true
+            //};
 
             return manager;
         }
